@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+	<siteMapNode url="Home.aspx" title="Home"  description="">
+		<siteMapNode url="AboutUs.aspx" title="About Us"  description="" />
+
+		<siteMapNode url="Member/RestaurantDetail.aspx" title="Restaurant" roles="Member" description="" />
+		<siteMapNode url="Admin/AdminHome.aspx" title="Admin Page" roles="Admin" description="" />
+
+		
+		<siteMapNode title="Account" description="Login and Register" roles="*">
+			<siteMapNode url="RegisterDesignFacebook.aspx" title="Register"  description="" />
+			<siteMapNode url="LoginDesign.aspx" title="Login"  description="" />
+			<siteMapNode url="AdminLoginDesign.aspx" title="Admin Login"  description="" />
+			<siteMapNode title="Logout" url="Logout.aspx" description="Logout" roles=""/>
+		</siteMapNode>
+
+
+	</siteMapNode>
+</siteMap>

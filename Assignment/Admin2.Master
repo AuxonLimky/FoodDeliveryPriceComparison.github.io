@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin2.master.cs" Inherits="Assignment.Admin2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="picture/logo/favicon-32x32.png">
+    <!-- CSS -->
+    <link href="admin-src/dist/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="admin-src/highlights/highlight.min.css">
+    <style>
+        .plugin-details {
+            display: none;
+        }
+
+        .plugin-details-active {
+            display: block;
+        }
+
+        .logo-icon img {
+            width: 50px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+            <!-- ============================================================== -->
+            <!-- Topbar header - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <header class="topbar" data-navbarbg="skin6">
+                <nav class="navbar top-navbar navbar-expand-md">
+                    <div class="navbar-header" data-logobg="skin6">
+                        <!-- This is for the sidebar toggle which is visible on mobile only -->
+                        <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                        <!-- ============================================================== -->
+                        <!-- Logo -->
+                        <!-- ============================================================== -->
+                        <div class="navbar-brand">
+                            <!-- Logo icon -->
+                            <a href="/Admin/AdminHome.aspx">
+                                <b class="logo-icon">
+                                </b>
+                                <!--End Logo icon -->
+                                <!-- Logo text -->
+                                <span class="logo-text">
+                                    <!-- dark Logo text -->
+                                    &nbsp;&nbsp;
+                                    <h4 style="display: inline-block;">Foodio Admin</h4>
+                                    <br />
+                                </span>
+                            </a>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- End Logo -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Toggle which is visible on mobile only -->
+                        <!-- ============================================================== -->
+                        <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                            data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                                class="ti-more"></i></a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <!-- ============================================================== -->
+                        <!-- toggle and nav items -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                            <!-- ============================================================== -->
+                            <!-- create new -->
+                            <!-- ============================================================== -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Home.aspx" role="button">Back to Foodio Home
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- ============================================================== -->
+            <!-- End Topbar header -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <aside class="left-sidebar" data-sidebarbg="skin6">
+                <!-- Sidebar scroll-->
+                <div class="scroll-sidebar" data-sidebarbg="skin6">
+                    <!-- Sidebar navigation-->
+                    <nav class="sidebar-nav">
+                        <ul id="sidebarnav">
+                            <li class="nav-small-cap"><span class="hide-menu">Own Profile</span></li>
+                            <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="../Logout.aspx"
+                                aria-expanded="false"><i data-feather="power" class="feather-icon"></i>
+                                <span class="hide-menu">Logout</span></a>
+                            </li>
+
+                            <li class="list-divider"></li>
+                            <li class="nav-small-cap"><span class="hide-menu">Management</span></li>
+                            
+                            <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="ManageUser.aspx"
+                                aria-expanded="false"><i data-feather="users" class="feather-icon"></i>
+                                <span class="hide-menu">Manage Users</span></a>
+                            </li>
+                            <li class="sidebar-item"><a class="sidebar-link sidebar-link" href="ManageRestaurant.aspx"
+                                aria-expanded="false"><i data-feather="user-plus" class="feather-icon"></i>
+                                <span class="hide-menu">Manage Restaurant</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+            </aside>
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+            <div class="page-wrapper">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="page-breadcrumb">
+                    <div class="d-flex align-items-center">
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-0">Foodio</h4>
+                        <div class="ml-auto">
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                                            
+                                        </asp:ContentPlaceHolder>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- All Jquery -->
+            <!-- ============================================================== -->
+            <script src="../admin-src/assets/libs/jquery/dist/jquery.min.js"></script>
+            <script src="../admin-src/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+            <script src="../admin-src/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+            <!-- apps -->
+            <script src="../admin-src/dist/js/app-style-switcher.js"></script>
+            <script src="../admin-src/dist/js/feather.min.js"></script>
+            <script src="../admin-src/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+            <!-- To make the container working -->
+            <script src="../admin-src/dist/js/sidebarmenu.js"></script>
+            <!--To make the sidebar nav working -->
+            <!--Custom JavaScript -->
+            <script src="../admin-src/dist/js/custom.min.js"></script>
+            <script src="../admin-src/highlights/highlight.min.js"></script>
+            <script>
+                hljs.initHighlightingOnLoad();
+            </script>
+            <!-- End JS -->
+        </div>
+    </form>
+</body>
+</html>

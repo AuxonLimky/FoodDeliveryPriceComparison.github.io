@@ -1,0 +1,96 @@
+﻿.gridview {
+    border-collapse: collapse;
+}
+
+    .gridview th,
+    .gridview td {
+        border: 1px solid #999;
+        padding: 5px;
+    }
+
+    .gridview th {
+        background-color: #5f76e8;
+        color: #fff;
+    }
+
+        .gridview th a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .gridview .sort-asc a {
+        background-image: url('../picture/WebImage/Asc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+
+    .gridview .sort-desc a {
+        background-image: url('../picture/WebImage/Desc.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+    }
+
+    .gridview .row:hover {
+        background-color: #CCD;
+    }
+
+    .gridview .pager table td {
+        padding: 0px;
+    }
+
+    .gridview .pager span {
+        display: block;
+        padding: 2px 5px;
+        background-color: #547;
+        color: #fff;
+    }
+
+    .gridview .pager a {
+        display: block;
+        padding: 2px 5px;
+        color: #000;
+        text-decoration: none;
+    }
+
+        .gridview .pager a:hover {
+            background-color: #CCD;
+        }
+
+body, table, input, select {
+    font: 11pt Calibri;
+}
+
+img.cover-100 {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+}
+
+.gridview .row .popup {
+    display: none;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+.gridview .row:hover .popup {
+    display: block;
+}
+
+.detailsview {
+    border-collapse: collapse;
+}
+
+    .detailsview td {
+        border: 1px solid #999;
+        padding: 5px;
+    }
+
+    .detailsview .header {
+        background-color: #547;
+        color: #fff;
+        font-weight: bold;
+    }
